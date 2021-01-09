@@ -1,5 +1,5 @@
 function initcart(id, prix,imageUrl,name) {
-    var produits = JSON.parse(localStorage.getItem('produits'));
+    var produits = new Array();
     var produit = {
         id: id,
         prix: prix,
@@ -7,7 +7,6 @@ function initcart(id, prix,imageUrl,name) {
         name:name,
         quantité: 1
     }
-    produits = new Array();
     produits.push(produit);
     localStorage.setItem('produits', JSON.stringify(produits));
 }
@@ -35,7 +34,6 @@ function addtocart(id, prix, imageUrl, name) {
             localStorage.setItem('produits', JSON.stringify(produits));
         }
     }
-
 }
 function decrfromcart(id) {
     var produits = JSON.parse(localStorage.getItem('produits'));

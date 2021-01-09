@@ -126,7 +126,7 @@ if (cartitems() > 0){
               <figure class="col-11 col-md-11 col-lg-11 m-2 profile-card-2 profile-card-2-shop ">
                 <img src="${produit.imageUrl}" alt="${produit.name}" class="img-shop img-responsive">
                 <figcaption class="card-shop" >
-                <button type="button" class="btndel" >
+                <button type="button" class="btndel">
               ×
                           </button>
                   <h5 class="nom-shop">${produit.name}</h5>
