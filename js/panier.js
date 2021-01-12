@@ -62,7 +62,12 @@ document.getElementById("inputEmail").addEventListener('keyup', () => {
     } else
         document.getElementById("inputEmail").style.backgroundColor = '#f3e9f1';
 })
-
+document.getElementById("inputAddress").addEventListener('keyup',()=>{
+    if(document.getElementById("inputAddress").value=='')
+        document.getElementById("inputAddress").style.backgroundColor = 'red';
+        else
+        document.getElementById("inputAddress").style.backgroundColor = '#f3e9f1';
+})
 document.getElementById("submit").addEventListener('click', () => {
     let valide = true;
 
@@ -78,6 +83,11 @@ document.getElementById("submit").addEventListener('click', () => {
         document.getElementById("inputville").style.backgroundColor = 'red';
         valide = false;
     }
+    if(document.getElementById("inputAddress").value==''){
+        document.getElementById("inputAddress").style.backgroundColor = 'red';
+        valide = false;
+    }
+
     if (!validity(document.getElementById("inputEmail").value, email)) {
         document.getElementById("inputEmail").style.backgroundColor = 'red';
         valide = false;
