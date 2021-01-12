@@ -121,6 +121,7 @@ function rmv(newp) {
             cart.innerHTML = cart_count;
             newp.textContent = "Total a payer: " + (somme / 100).toFixed(2) + " €";
             card[i].style.display = "none";
+            document.location.reload();
             if (cart_count == 0) {
                 let newp = document.createElement('p');
                 newp.textContent = "Votre panier est vide !";
@@ -159,7 +160,7 @@ if (cartitems() > 0) {
 
     var produits = JSON.parse(localStorage.getItem('produits'));
     produits.forEach((produit) => {
-
+        
         docHtml.innerHTML += `
           
               <figure class="col-11 col-md-11 col-lg-11 m-2 profile-card-2 profile-card-2-shop ">
