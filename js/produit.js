@@ -31,13 +31,13 @@ get(`http://localhost:3000/api/teddies/${new URLSearchParams(window.location.sea
 			</button>
           `;
     document.querySelectorAll(".btn")[0].addEventListener('click', () => {
-        addtocart(new URLSearchParams(window.location.search).get("id"), new URLSearchParams(window.location.search).get("prix"),data.imageUrl,data.name);
+        addtocart(new URLSearchParams(window.location.search).get("id"), new URLSearchParams(window.location.search).get("prix"), data.imageUrl, data.name);
         cart.innerHTML = cartitems();
     });
     var loadingspinner = document.querySelectorAll(".loader");
     loadingspinner[0].style.display = "none";
     docHtml.style.display = "contents";
-    
+
 }).catch(function (error) {
     console.log(error);
 })

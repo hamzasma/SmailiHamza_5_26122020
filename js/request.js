@@ -36,4 +36,4 @@ var post = function (url, formdata) {
 }
 
 
-export{get,post};
+export { get, post };

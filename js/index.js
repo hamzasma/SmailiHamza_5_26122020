@@ -3,10 +3,10 @@ import { cartitems } from './paniergestion.js';
 const docHtml = document.getElementById("contenair");
 let cart = document.getElementById("cart-count");
 /*init cart*/
-if(cartitems()>0)
- cart.innerHTML = cartitems();
- else
-cart.innerHTML="";
+if (cartitems() > 0)
+    cart.innerHTML = cartitems();
+else
+    cart.innerHTML = "";
 /** exuction de la fonction getdata pour afficher les produits*/
 get("http://localhost:3000/api/teddies/").then(function (data) {
     data.forEach((objet) => {

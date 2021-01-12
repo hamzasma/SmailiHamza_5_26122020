@@ -1,10 +1,10 @@
-function initcart(id, prix,imageUrl,name) {
+function initcart(id, prix, imageUrl, name) {
     var produits = new Array();
     var produit = {
         id: id,
         prix: prix,
-        imageUrl:imageUrl,
-        name:name,
+        imageUrl: imageUrl,
+        name: name,
         quantité: 1
     }
     produits.push(produit);
@@ -26,8 +26,8 @@ function addtocart(id, prix, imageUrl, name) {
             var produit = {
                 id: id,
                 prix: prix,
-                imageUrl:imageUrl,
-                name:name,
+                imageUrl: imageUrl,
+                name: name,
                 quantité: 1
             }
             produits.push(produit);
@@ -59,16 +59,16 @@ function sommetotal() {
 function rmvitem(i) {
     console.log(i);
     var produits = JSON.parse(localStorage.getItem('produits'));
-    produits.splice(produits.indexOf(produits[i]),1);
+    produits.splice(produits.indexOf(produits[i]), 1);
     localStorage.setItem('produits', JSON.stringify(produits));
 }
-function boughtitems(){
+function boughtitems() {
     var produits = JSON.parse(localStorage.getItem('produits'));
-    let items=new Array();
+    let items = new Array();
     produits.forEach(produit => {
-        if(produit.quantité>0)
-         items.push(produit.id);
+        if (produit.quantité > 0)
+            items.push(produit.id);
     });
     return items;
 }
-export { addtocart, decrfromcart, cartitems, sommetotal, rmvitem ,boughtitems};
+export { addtocart, decrfromcart, cartitems, sommetotal, rmvitem, boughtitems };

@@ -17,12 +17,13 @@ body {
 .nav-item {
   margin-right: 20px;
 }
-.nav-link:hover{
-    text-shadow: -1px 2px 9px blue;
+.nav-link:hover {
+  text-shadow: -1px 2px 9px blue;
   transition: 0.5s;
 }
-.fa,.fas{
-    transition: 1s;
+.fa,
+.fas {
+  transition: 1s;
 }
 .fa,
 .fas:hover {
@@ -45,28 +46,27 @@ body {
   transition: 0.5s;
 }
 
-#ex1{
-width: 100%;
+#ex1 {
+  width: 100%;
   margin-bottom: 50px;
 }
-#ex1 h2{
+#ex1 h2 {
   text-align: center;
-  color:black;
-  top:240px;
+  color: black;
+  top: 240px;
   width: 100%;
   padding: 10px;
   font-size: 50px;
   font-weight: bold;
   margin-top: 40px;
 }
-#ex1 p{
+#ex1 p {
   text-align: center;
-  color:black;
+  color: black;
   width: 100%;
   padding: 20px;
   font-size: 30px;
   font-weight: bold;
-  
 }
 .row {
   justify-content: center;
@@ -258,8 +258,8 @@ width: 100%;
   font-size: 13px;
   -webkit-text-stroke-width: thick;
 }
-.btnadd:focus{
-   outline: 0;
+.btnadd:focus {
+  outline: 0;
 }
 .profile-card-2:hover {
   transform: scale(1.03);
@@ -271,9 +271,9 @@ width: 100%;
   font-size: 13px;
   -webkit-text-stroke-width: thick;
 }
-.btnrmv:focus{
-    outline: 0;
- }
+.btnrmv:focus {
+  outline: 0;
+}
 .add-unit .input-count {
   border: 0;
   width: 30px;
@@ -332,29 +332,41 @@ width: 100%;
   background: black;
   margin-left: 54%;
 }
-.somme:hover{
+.somme:hover {
   animation: 2s shake infinite alternate;
 }
-.merci{
+.merci {
   text-align: center;
   color: rgb(114, 75, 3);
   font-weight: bold;
   text-shadow: -1px 2px 9px white;
   animation: 2s shake infinite alternate;
 }
-.idf{
+.idf {
   text-align: center;
   color: rgb(12, 88, 2);
   font-weight: bold;
   text-shadow: -1px 2px 9px white;
 }
 @keyframes shake {
-  0% { transform: skewX(-30deg); }
-  5% { transform: skewX(30deg); }
-  10% { transform: skewX(-30deg); }
-  15% { transform: skewX(30deg); }
-  20% { transform: skewX(0deg); }
-  100% { transform: skewX(0deg); }  
+  0% {
+    transform: skewX(-30deg);
+  }
+  5% {
+    transform: skewX(30deg);
+  }
+  10% {
+    transform: skewX(-30deg);
+  }
+  15% {
+    transform: skewX(30deg);
+  }
+  20% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
 }
 @media (min-width: 992px) {
   .row {
